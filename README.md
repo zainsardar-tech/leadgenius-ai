@@ -1,6 +1,3 @@
-<div align="center">
-   <img width="1200" height="475" alt="LeadGenius AI Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-
    <h1>LeadGenius AI</h1>
    <p><strong>Advanced AI Lead Intelligence and Sales Strategy Assistant</strong></p>
 
@@ -21,8 +18,6 @@ LeadGenius AI is a Next.js web application that helps sales teams, agencies, and
 5. Build a final summary report with opportunity insights
 
 The project was originally bootstrapped from Google AI Studio app tooling and extended into a complete, production-ready web app.
-
-AI Studio app link: https://ai.studio/apps/89d36ffe-7764-40f5-90a1-99e40f6700ad
 
 ## Core Features
 
@@ -129,4 +124,3 @@ Basic Vercel flow:
 ## License
 
 This repository currently does not define a root project license. Add a LICENSE file before public/commercial reuse.
-# leadgenius-ai
