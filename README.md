@@ -129,3 +129,4 @@ Basic Vercel flow:
 ## License
 
 This repository currently does not define a root project license. Add a LICENSE file before public/commercial reuse.
+# leadgenius-ai
