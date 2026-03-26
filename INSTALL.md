@@ -26,10 +26,15 @@ Create an environment file:
 cp .env.example .env.local
 ```
 
-Set your API key in .env.local:
+Set required values in .env.local:
 
 ```env
-NEXT_PUBLIC_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+AUTH_SECRET=YOUR_STRONG_SECRET
+APP_ADMIN_EMAIL=admin@example.com
+APP_ADMIN_PASSWORD=YOUR_ADMIN_PASSWORD
+APP_MEMBER_EMAIL=member@example.com
+APP_MEMBER_PASSWORD=YOUR_MEMBER_PASSWORD
 ```
 
 ## 4. Start the App
@@ -58,8 +63,9 @@ npm run lint
 ## 7. Troubleshooting
 
 - API key errors
-  - Ensure NEXT_PUBLIC_GEMINI_API_KEY is set correctly.
-  - Or open app Settings and save key there.
+  - Ensure GEMINI_API_KEY is set correctly.
+- Login failures
+  - Ensure APP_ADMIN/APP_MEMBER credentials are configured in environment variables.
 - Port already in use
   - Stop process on port 3000, or run with a custom port.
 - Rate limit/quota messages
@@ -67,4 +73,4 @@ npm run lint
 
 ## 8. Security Note
 
-The default setup runs AI requests from the browser. For higher security, use a backend API route as a proxy so keys are not exposed in client-side contexts.
+This setup runs AI requests from backend API routes, keeps API keys server-side, and uses signed HTTP-only cookies for authenticated access.

@@ -5,11 +5,9 @@ LeadGenius AI helps you go from business context to lead generation and outreach
 ## 1. First-Time Setup
 
 1. Open the app.
-2. Click API Settings (top-right).
-3. Paste your Gemini API key.
-4. Click Save Key.
-
-Alternative: set NEXT_PUBLIC_GEMINI_API_KEY in .env.local.
+2. Click Login (top-right settings icon).
+3. Enter configured email and password.
+4. Start using the workflow after successful authentication.
 
 ## 2. Business Profile
 
@@ -52,7 +50,7 @@ What you can do:
 - Change lead status (New, Contacted, Qualified, or custom)
 - Delete specific leads
 - Load more leads
-- Export all leads as CSV
+- Export leads as CSV with selectable columns
 - Review source links collected from web/maps grounding
 
 ## 5. Outreach Templates
@@ -92,6 +90,7 @@ The report summarizes:
 
 ## 8. Known Behaviors
 
-- If no API key is found, the app opens Settings automatically.
-- API key is stored in your browser localStorage when set in app.
+- If session is missing/expired, login modal opens automatically.
+- API key is never stored in browser localStorage.
+- AI requests run through secured backend API routes.
 - If Gemini quota is exceeded, you may see temporary rate limit messages.

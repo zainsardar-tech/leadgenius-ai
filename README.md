@@ -71,10 +71,15 @@ npm install
 cp .env.example .env.local
 ```
 
-4. Add your key in .env.local:
+4. Add required values in .env.local:
 
 ```env
-NEXT_PUBLIC_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+AUTH_SECRET=YOUR_STRONG_SECRET
+APP_ADMIN_EMAIL=admin@example.com
+APP_ADMIN_PASSWORD=YOUR_ADMIN_PASSWORD
+APP_MEMBER_EMAIL=member@example.com
+APP_MEMBER_PASSWORD=YOUR_MEMBER_PASSWORD
 ```
 
 5. Start development server:
@@ -85,7 +90,7 @@ npm run dev
 
 6. Open http://localhost:3000
 
-You can also set the API key directly from the in-app Settings modal. The key is stored in browser localStorage for that browser profile.
+Sign in from the in-app login modal using one of the configured credentials.
 
 ## Available Scripts
 
@@ -97,9 +102,15 @@ You can also set the API key directly from the in-app Settings modal. The key is
 
 ## Environment Variables
 
-- NEXT_PUBLIC_GEMINI_API_KEY: Gemini API key used by the frontend
+- GEMINI_API_KEY: Gemini API key used by backend API routes
+- AUTH_SECRET: Signing secret for session cookies
+- APP_ADMIN_EMAIL / APP_ADMIN_PASSWORD: Admin login
+- APP_MEMBER_EMAIL / APP_MEMBER_PASSWORD: Member login
 
-Note: This app executes AI calls from the client. For strict enterprise security controls, route requests through a backend proxy and avoid exposing API keys to browser environments.
+Security model:
+- AI calls run server-side through Next.js API routes
+- API key is never stored in browser localStorage
+- Access is restricted via signed HTTP-only session cookies
 
 ## Deployment
 
@@ -108,7 +119,7 @@ Deploy on Vercel (recommended) or any platform that supports Next.js.
 Basic Vercel flow:
 
 1. Import repository into Vercel
-2. Set NEXT_PUBLIC_GEMINI_API_KEY in project environment variables
+2. Set all required environment variables from .env.example in project environment variables
 3. Deploy
 
 ## Documentation
