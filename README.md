@@ -19,6 +19,10 @@ LeadGenius AI is a Next.js web application that helps sales teams, agencies, and
 
 The project was originally bootstrapped from Google AI Studio app tooling and extended into a complete, production-ready web app.
 
+## UI Preview
+
+![LeadGenius AI Screenshot](./screenshot.png)
+
 ## Core Features
 
 - Business profile intake with structured targeting inputs
@@ -29,7 +33,7 @@ The project was originally bootstrapped from Google AI Studio app tooling and ex
 - CSV export for downstream CRM workflows
 - General and lead-specific outreach templates
 - Final report generation with conversion and revenue potential framing
-- Local browser API key storage flow for quick onboarding
+- Secure login with role-based access (admin/member)
 
 ## Tech Stack
 
@@ -127,6 +131,11 @@ Basic Vercel flow:
 - Installation guide: INSTALL.md
 - User manual: USER_MANUAL.md
 - Contribution guide and credits: CONTRIBUTING.md
+
+## Notes
+
+- Keep `screenshot.png` updated when major UI changes are introduced.
+- If login or setup flow changes, update README, INSTALL, and USER_MANUAL in the same PR.
 
 ## Credits
 

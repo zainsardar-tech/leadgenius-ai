@@ -2,6 +2,8 @@
 
 This guide explains how to install and run LeadGenius AI locally in a reliable way.
 
+Preview image: `screenshot.png`
+
 ## 1. Requirements
 
 - Node.js 18 or newer (Node.js 20 LTS recommended)
@@ -46,6 +48,11 @@ npm run dev
 Open in browser:
 
 - http://localhost:3000
+
+After opening the app:
+
+- Login using credentials configured in `.env.local`
+- Complete business profile and run one strategy generation to verify AI route access
 
 ## 5. Build for Production
 

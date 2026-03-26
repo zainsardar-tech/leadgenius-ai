@@ -25,6 +25,7 @@ npm run lint
 - UI updates are responsive on desktop and mobile.
 - Documentation is updated when behavior changes.
 - No secrets or credentials are committed.
+- If UI changes are significant, update `screenshot.png`.
 
 ## Coding Standards
 
@@ -32,6 +33,11 @@ npm run lint
 - Follow existing naming and folder conventions.
 - Keep components and functions focused.
 - Avoid unrelated formatting-only changes in PRs.
+
+## Documentation Expectations
+
+- Keep README, INSTALL, and USER_MANUAL aligned when setup/auth flow changes.
+- Ensure screenshot references remain valid and image path stays `./screenshot.png`.
 
 ## Issue Reporting
 

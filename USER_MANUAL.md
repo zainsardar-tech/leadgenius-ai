@@ -2,12 +2,21 @@
 
 LeadGenius AI helps you go from business context to lead generation and outreach in one flow.
 
+## UI Preview
+
+![LeadGenius AI Screenshot](./screenshot.png)
+
 ## 1. First-Time Setup
 
 1. Open the app.
 2. Click Login (top-right settings icon).
 3. Enter configured email and password.
 4. Start using the workflow after successful authentication.
+
+Important:
+
+- Login credentials are controlled via environment variables (`APP_ADMIN_*`, `APP_MEMBER_*`).
+- Gemini requests work only when `GEMINI_API_KEY` is configured server-side.
 
 ## 2. Business Profile
 
